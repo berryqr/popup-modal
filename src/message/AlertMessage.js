@@ -6,10 +6,13 @@ export const AlertMessage = ({message, hide}) => {
 
   return (
     <div className="popup-modal">
-      <div className="popup-modal-content">
+      <div className="popup-modal-content alert-danger">
+        <div className="popup-modal-header alert-heading">
         <h3>Alert</h3>
-        <hr />
         <span className="popup-modal-close-button" onClick={() => {hide()}}>&times;</span>
+        </div>
+        <hr />
+  
         <div id="popup-modal-msg" dangerouslySetInnerHTML={dangerous_html} />
       </div>
     </div>
