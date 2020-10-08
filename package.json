@@ -1,16 +1,13 @@
 {
-    "name": "popup-modal",
-    "description": "Create basic modals in react.",
-    "version": "0.1.0",
-    "author": "Paul Simon <psimondev@icloud.com>",
-    "license": "MIT",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "dependencies": {
-      "react": "^16.8.6",
-      "react-dom": "^16.8.6"
-    }
-  }
-  
+  "name": "popup-modal",
+  "description": "Create basic modals in react.",
+  "version": "0.1.0",
+  "author": "Paul Simon <psimondev@icloud.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "dependencies": {}
+}
