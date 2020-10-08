@@ -6,7 +6,7 @@ export const SimpleMessage = ({message, hide}) => {
 
   return (
     <div className="popup-modal">
-      <div className="popup-modal-content">
+      <div className="popup-modal-content alert-info">
         <span className="popup-modal-close-button" onClick={() => {hide()}}>&times;</span>
         <div id="popup-modal-msg" dangerouslySetInnerHTML={dangerous_html} />
       </div>

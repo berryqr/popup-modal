@@ -22,10 +22,6 @@
     z-index: 9999;
 }
 
-.popup-modal-alert .popup-modal-content {
-    border: 3px solid red;
-}
-
 .popup-modal-content {
     position: absolute;
     top: 50%;
