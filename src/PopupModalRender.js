@@ -2,8 +2,9 @@ import React from "react";
 import {usePopupModal} from './index.js';
 import './style.css';
 
-import {SimpleMessage} from './SimpleMessage';
-import {ProgressMessage} from './ProgressMessage';
+import {SimpleMessage} from './message/SimpleMessage';
+import {ProgressMessage} from './message/ProgressMessage';
+import {AlertMessage} from './message/AlertMessage';
 
 
 const PopupModalRender = () => {
@@ -16,6 +17,9 @@ const PopupModalRender = () => {
   }
   else if('progress' == data.type) {
     Popup = <ProgressMessage {...params} />
+  }
+  else if('alert' == data.type) {
+    Popup = <AlertMessage {...params} />
   }
   else {
     Popup = null;

@@ -29,6 +29,11 @@ export const PopupModalProvider = ({ children }) => {
         progress: (msg) => {
           setState({ ...state, message: msg, display : true,  type : 'progress' });
         },
+
+        alert: (msg) => {
+          setState({ ...state, message: msg, display : true,  type : 'alert' });
+        },
+
         hide: () => {
           setState({ ...state, message: '',  display : false, type : '' });
         }
